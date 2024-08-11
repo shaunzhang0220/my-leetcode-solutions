@@ -1,0 +1,44 @@
+{
+    "name": "leetcode-solution",
+    "image": "python:latest",
+    "mounts": [
+        "source=${localEnv:HOME}/.ssh,target=/root/.ssh,type=bind,consistency=cached",
+        "source=${localEnv:HOME}/.gitconfig,target=/root/.gitconfig,type=bind,consistency=cached"
+
+    ],
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "Tyriar.sort-lines",
+                "mhutchie.git-graph",
+                "ms-python.vscode-pylance",
+                "streetsidesoftware.code-spell-checker"
+            ],
+            "settings": {
+                "cSpell.words": [
+                    "leetcode",
+                    "mhutchie",
+                    "pycache",
+                    "pylance",
+                    "Tyriar"
+                ],
+                "files.exclude": {
+                    "**/.git": true,
+                    "**/.svn": true,
+                    "**/.hg": true,
+                    "**/CVS": true,
+                    "**/.DS_Store": true,
+                    "**/Thumbs.db": true,
+                    "**/__pycache__": true
+                },
+                "editor.rulers": [100],
+                "editor.tabSize": 4,
+                "editor.insertSpaces": true,
+                "editor.wordWrap": "on",
+                "files.autoSave": "onFocusChange",
+                "terminal.integrated.defaultProfile.linux": "bash"
+            }
+        }
+    },
+    "postCreateCommand": "chmod 600 /root/.ssh/id_rsa"
+}
