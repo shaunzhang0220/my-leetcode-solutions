@@ -1,6 +1,5 @@
 class Solution:
-    """
-    A class to calculate the h-index of a researcher based on their citation count.
+    """A class to calculate the h-index of a researcher based on their citation count.
 
     The h-index is defined as the maximum value of h such that the given researcher
     has published at least h papers that have each been cited at least h times. The
@@ -17,8 +16,7 @@ class Solution:
     """
 
     def hIndex(self, citations: list[int]):
-        """
-        Determines the h-index for a researcher given their citation counts.
+        """Determines the h-index for a researcher given their citation counts.
 
         Args:
             citations (List[int]): A sorted list of non-negative integers where 

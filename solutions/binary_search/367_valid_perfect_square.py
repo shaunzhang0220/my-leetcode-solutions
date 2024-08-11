@@ -1,8 +1,7 @@
 
 
 class Solution:
-    """
-    A class used to determine if a given positive integer is a perfect square.
+    """A class used to determine if a given positive integer is a perfect square.
 
     A perfect square is an integer that is the square of another integer, i.e., 
     it is the product of some integer with itself. The algorithm does not use 
@@ -18,8 +17,7 @@ class Solution:
     """
 
     def isPerfectSquare(self, num: int):
-        """
-        Determines if the given positive integer is a perfect square.
+        """Determines if the given positive integer is a perfect square.
 
         Args:
             num (int): A positive integer to check if it is a perfect square.
